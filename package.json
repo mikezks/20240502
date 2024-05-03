@@ -37,6 +37,7 @@
     "@ngrx/store": "^17.2.0",
     "@nx/angular": "18.3.3",
     "angular-oauth2-oidc": "^17.0.2",
+    "es-module-shims": "^1.5.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

@@ -5,10 +5,12 @@ import { ManageComponent } from '@flight-demo/checkin/feature-manage';
 @Component({
   standalone: true,
   imports: [CommonModule, ManageComponent],
-  selector: 'flight-demo-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'checkin';
 }
+
+export default AppComponent;

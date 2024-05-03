@@ -1,23 +1,20 @@
 {
-  "name": "tickets",
+  "name": "miles",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/tickets/src",
-  "tags": [
-    "domain:tickets",
-    "type:app"
-  ],
+  "sourceRoot": "apps/miles/src",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-architects/native-federation:build",
       "options": {},
       "configurations": {
         "production": {
-          "target": "tickets:esbuild:production"
+          "target": "miles:esbuild:production"
         },
         "development": {
-          "target": "tickets:esbuild:development",
+          "target": "miles:esbuild:development",
           "dev": true
         }
       },
@@ -26,7 +23,7 @@
     "serve": {
       "executor": "@angular-architects/native-federation:build",
       "options": {
-        "target": "tickets:serve-original:development",
+        "target": "miles:serve-original:development",
         "rebuildDelay": 0,
         "dev": true,
         "port": 0
@@ -35,7 +32,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "tickets:build"
+        "buildTarget": "miles:build"
       }
     },
     "lint": {
@@ -47,15 +44,15 @@
         "{workspaceRoot}/coverage/{projectRoot}"
       ],
       "options": {
-        "jestConfig": "apps/tickets/jest.config.ts"
+        "jestConfig": "apps/miles/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "tickets:build",
+        "buildTarget": "miles:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/tickets/browser",
+        "staticFilePath": "dist/apps/miles/browser",
         "spa": true
       }
     },
@@ -65,24 +62,21 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "dist/apps/tickets",
-        "index": "apps/tickets/src/index.html",
-        "browser": "apps/tickets/src/main.ts",
+        "outputPath": "dist/apps/miles",
+        "index": "apps/miles/src/index.html",
+        "browser": "apps/miles/src/main.ts",
         "polyfills": [
           "zone.js",
           "es-module-shims"
         ],
-        "tsConfig": "apps/tickets/tsconfig.app.json",
+        "tsConfig": "apps/miles/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/tickets/src/favicon.ico",
-          "apps/tickets/src/assets"
+          "apps/miles/src/favicon.ico",
+          "apps/miles/src/assets"
         ],
         "styles": [
-          "@angular/material/prebuilt-themes/indigo-pink.css",
-          "@angular-architects/paper-design/assets/css/bootstrap.css",
-          "@angular-architects/paper-design/assets/scss/paper-dashboard.scss",
-          "apps/tickets/src/styles.scss"
+          "apps/miles/src/styles.scss"
         ],
         "scripts": []
       },
@@ -114,15 +108,15 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "tickets:esbuild:production"
+          "buildTarget": "miles:esbuild:production"
         },
         "development": {
-          "buildTarget": "tickets:esbuild:development"
+          "buildTarget": "miles:esbuild:development"
         }
       },
       "defaultConfiguration": "development",
       "options": {
-        "port": 4200
+        "port": 4202
       }
     }
   }
