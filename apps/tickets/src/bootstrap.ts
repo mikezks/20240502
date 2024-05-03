@@ -12,10 +12,10 @@ import { APP_ROUTES } from './app/app.routes';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    {
+    /* {
       provide: NgZone,
       useValue: (window as any)['shellNgZone'] || 'zone.js'
-    },
+    }, */
     provideHttpClient(),
     provideRouter(
       APP_ROUTES,
