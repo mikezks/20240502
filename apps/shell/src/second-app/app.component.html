@@ -1,0 +1,22 @@
+<img src="assets/icons/icon-72x72.png">
+<h1>Angular App 2 (Micro App)</h1>
+
+<ul>
+  <li>
+    <a routerLink="/home">Home</a>
+  </li>
+  <li>
+    <a routerLink="/use-case-2">Use Case</a>
+  </li>
+  <li>
+    <a [routerLink]="[{ outlets: { 'app-1': '' }}]">Deeplink: App 1, Home</a>
+  </li>
+  <li>
+    <a [routerLink]="[{ outlets: { 'app-1': 'use-case-1' }}]">Deeplink: App 1, Use Case 1</a>
+  </li>
+  <li>
+    <a routerLink="(mfe-react:use-case-3)">Deeplink string: MFE React, Use Case 3</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

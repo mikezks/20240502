@@ -1,0 +1,25 @@
+<img src="assets/icons/icon-72x72.png">
+<h1>Angular App 1 (Shell)</h1>
+
+<ul>
+  <li>
+    <a routerLink="">Home</a>
+  </li>
+  <li>
+    <a routerLink="/use-case-1">Use Case</a>
+  </li>
+  <li>
+    <a [routerLink]="[{ outlets: { 'app-2': '' }}]">Deeplink: App 2, Home</a>
+  </li>
+  <li>
+    <a [routerLink]="[{ outlets: { 'app-2': 'use-case-2' }}]">Deeplink: App 2, Use Case 2</a>
+  </li>
+  <li>
+    <a routerLink="(app-2:)">Deeplink string: App 2, Home</a>
+  </li>
+  <li>
+    <a routerLink="(app-2:use-case-2)">Deeplink string: App 2, Use Case 2</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
