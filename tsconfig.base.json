@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@flight-demo/boarding/domain": ["libs/boarding/domain/src/index.ts"],
+      "@flight-demo/boarding/feature-ticket-check": [
+        "libs/boarding/feature-ticket-check/src/index.ts"
+      ],
       "@flight-demo/checkin/domain": ["libs/checkin/domain/src/index.ts"],
       "@flight-demo/checkin/feature-manage": [
         "libs/checkin/feature-manage/src/index.ts"

@@ -1,0 +1,10 @@
+{
+  "name": "boarding-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/boarding-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["boarding"],
+  "// targets": "to see all targets run: nx show project boarding-e2e --web",
+  "targets": {}
+}
