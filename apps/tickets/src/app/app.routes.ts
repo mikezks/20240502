@@ -39,7 +39,8 @@ export const APP_ROUTES: Routes = [
       },
       {
         path: 'miles',
-        loadComponent: () => loadRemoteModule('miles', './Component')
+        loadComponent: () => loadRemoteModule('miles', './Component'),
+        // outlet: 'right-area'
       },
       {
         path: 'about',

@@ -8,7 +8,15 @@
     "src/main.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "..\\..\\libs\\checkin\\domain\\src\\index.ts",
+    "..\\..\\libs\\checkin\\feature-manage\\src\\index.ts",
+    "..\\..\\libs\\shared\\ui-common\\src\\index.ts",
+    "..\\..\\libs\\shared\\util-config\\src\\index.ts",
+    "..\\..\\libs\\shared\\util-validation\\src\\index.ts",
+    "..\\..\\libs\\tickets\\domain\\src\\index.ts",
+    "..\\..\\libs\\tickets\\feature-booking\\src\\index.ts",
+    "..\\..\\libs\\tickets\\feature-next-flights\\src\\index.ts"
   ],
   "exclude": [
     "jest.config.ts",
